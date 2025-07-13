@@ -1,0 +1,12 @@
+telegram_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: admin
+      password: secret
+      port: 5432
+      dbname: medical_data
+      schema: analytics
+      threads: 1
